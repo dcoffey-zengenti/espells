@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import type { Prefix, Suffix } from "../aff/affix"
-import type { Word } from "../dic/word"
-import { concat } from "../util"
-import { LKWord } from "./lk-word"
+import type { Prefix, Suffix } from "../aff/affix.js"
+import type { Word } from "../dic/word.js"
+import { concat } from "../util.js"
+import { LKWord } from "./lk-word.js"
 
 export interface AffixFormOpts {
   /** Outermost prefix. */

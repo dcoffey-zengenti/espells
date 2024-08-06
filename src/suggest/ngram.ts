@@ -3,16 +3,16 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { iterate } from "iterare"
-import { CONSTANTS as C } from "../constants"
-import type { Word } from "../dic/word"
-import { lowercase } from "../util"
+import { CONSTANTS as C } from "../constants.js"
+import type { Word } from "../dic/word.js"
+import { lowercase } from "../util.js"
 import {
   preciseAffixScore,
   rootScore,
   roughAffixScore,
   ScoresList,
   scoreThreshold
-} from "./scores"
+} from "./scores.js"
 
 export class NgramSuggestionBuilder {
   /** The "root" scores for potential suggestions for a misspelling. */

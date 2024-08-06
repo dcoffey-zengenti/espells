@@ -2,13 +2,13 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import { CapType, CompoundPos } from "../constants"
-import type { Word } from "../dic"
-import { includes, lowercase } from "../util"
-import { decompose } from "./decompose"
-import type { AffixForm } from "./forms"
-import { LKFlags } from "./lk-flags"
-import type { LKWord } from "./lk-word"
+import { CapType, CompoundPos } from "../constants.js"
+import type { Word } from "../dic/index.js"
+import { includes, lowercase } from "../util.js"
+import { decompose } from "./decompose.js"
+import type { AffixForm } from "./forms.js"
+import { LKFlags } from "./lk-flags.js"
+import type { LKWord } from "./lk-word.js"
 
 /**
  * Yields the allowed {@link AffixForm}s for this word, as in all ways the

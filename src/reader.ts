@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import { decoder } from "./constants"
+import { decoder } from "./constants.js"
 
 /** Wrapper for manipulating a document separated by lines. */
 export class Reader {

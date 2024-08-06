@@ -3,14 +3,14 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { iterate } from "iterare"
-import type { Aff } from "../aff"
-import { CapType, CONSTANTS as C } from "../constants"
-import type { Dic } from "../dic"
-import { any, includes } from "../util"
-import { affixForms as affixes } from "./affixes"
-import { compoundForms as compounds } from "./compounds"
-import { breakWord } from "./decompose"
-import { LKWord } from "./lk-word"
+import type { Aff } from "../aff/index.js"
+import { CapType, CONSTANTS as C } from "../constants.js"
+import type { Dic } from "../dic/index.js"
+import { any, includes } from "../util.js"
+import { affixForms as affixes } from "./affixes.js"
+import { compoundForms as compounds } from "./compounds.js"
+import { breakWord } from "./decompose.js"
+import { LKWord } from "./lk-word.js"
 
 /** The resulting data returned from executing a lookup. */
 export interface LookupResult {

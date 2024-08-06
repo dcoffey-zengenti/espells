@@ -3,10 +3,10 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { iterate } from "iterare"
-import type { Aff, Flag } from "../aff"
-import { CapType, CONSTANTS as C } from "../constants"
-import type { Reader } from "../reader"
-import { Word } from "./word"
+import type { Aff, Flag } from "../aff/index.js"
+import { CapType, CONSTANTS as C } from "../constants.js"
+import type { Reader } from "../reader.js"
+import { Word } from "./word.js"
 
 export { Word }
 

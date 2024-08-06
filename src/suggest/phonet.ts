@@ -2,11 +2,11 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import type { PhonetTable } from "../aff/phonet-table"
-import { CONSTANTS as C } from "../constants"
-import type { Word } from "../dic/word"
-import { lowercase, ngram } from "../util"
-import { finalScore, rootScore, ScoresList } from "./scores"
+import type { PhonetTable } from "../aff/phonet-table.js"
+import { CONSTANTS as C } from "../constants.js"
+import type { Word } from "../dic/word.js"
+import { lowercase, ngram } from "../util.js"
+import { finalScore, rootScore, ScoresList } from "./scores.js"
 
 /**
  * Builder for phonetic suggestions.

@@ -3,8 +3,8 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { iterate } from "iterare"
-import { PriorityList } from "../plist"
-import { commonCharacters, lcslen, leftCommonSubstring, lowercase, ngram } from "../util"
+import { PriorityList } from "../plist.js"
+import { commonCharacters, lcslen, leftCommonSubstring, lowercase, ngram } from "../util.js"
 
 /** An entry in a {@link ScoresList}. */
 export type ScoreEntry<T extends any[]> = [number, ...T]

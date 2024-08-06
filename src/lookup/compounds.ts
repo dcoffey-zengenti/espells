@@ -2,16 +2,16 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import type { Flags } from "../aff"
-import type { CompoundRule } from "../aff/compound-rule"
-import { CapType, CompoundPos } from "../constants"
-import { Word } from "../dic"
-import { replchars } from "../permutations"
-import { any, isTriplet, isUppercased } from "../util"
-import { affixForms } from "./affixes"
-import { AffixForm } from "./forms"
-import { LKFlags } from "./lk-flags"
-import type { LKWord } from "./lk-word"
+import type { Flags } from "../aff/index.js"
+import type { CompoundRule } from "../aff/compound-rule.js"
+import { CapType, CompoundPos } from "../constants.js"
+import { Word } from "../dic/index.js"
+import { replchars } from "../permutations.js"
+import { any, isTriplet, isUppercased } from "../util.js"
+import { affixForms } from "./affixes.js"
+import { AffixForm } from "./forms.js"
+import { LKFlags } from "./lk-flags.js"
+import type { LKWord } from "./lk-word.js"
 
 /**
  * A hypothesis of how a compound word may be constructed, using an array

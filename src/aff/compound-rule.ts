@@ -3,9 +3,9 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { iterate } from "iterare"
-import { intersect, product, re } from "../util"
-import type { Aff, Flags, FlagSet } from "./index"
-import type { Flag } from "./types"
+import { intersect, product, re } from "../util.js"
+import type { Aff, Flags, FlagSet } from "./index.js"
+import type { Flag } from "./types.js"
 
 // TODO: make this not use a weird regex matching system
 // I couldn't exactly wrap my brain around how to avoid using regex here

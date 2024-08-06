@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import { CapType } from "../constants"
+import { CapType } from "../constants.js"
 import {
   isLowercased,
   isTitlecased,
@@ -11,7 +11,7 @@ import {
   replaceRange,
   titlecase,
   uppercase
-} from "../util"
+} from "../util.js"
 
 /**
  * A class containing casing-related algorithms for a language. This is a

@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import { re, replaceRange } from "../util"
+import { re, replaceRange } from "../util.js"
 
 /**
  * A replacement pattern describes a pattern and its replacement, with the

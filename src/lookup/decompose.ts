@@ -2,12 +2,12 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import type { Aff } from "../aff"
-import { CompoundPos } from "../constants"
-import { concat, reverse } from "../util"
-import { AffixForm } from "./forms"
-import type { LKFlags } from "./lk-flags"
-import type { LKWord } from "./lk-word"
+import type { Aff } from "../aff/index.js"
+import { CompoundPos } from "../constants.js"
+import { concat, reverse } from "../util.js"
+import { AffixForm } from "./forms.js"
+import type { LKFlags } from "./lk-flags.js"
+import type { LKWord } from "./lk-word.js"
 
 export const enum AffixType {
   PREFIX,
@@ -129,7 +129,7 @@ function* desuffix(
     yield new AffixForm(word, stem, { suffix })
 
     if (!nested) {
-      const newFlags = flags.replace({ suffix: concat(suffix.flags, flags.suffix) })
+      const newFlags = flags.replace({ suffix: concat<string>(suffix.flags, flags.suffix) })
       for (const form2 of desuffix(aff, stem, newFlags, crossproduct, true)) {
         yield form2.replace({ text: word, suffix2: suffix })
       }
@@ -158,7 +158,7 @@ function* deprefix(
     yield new AffixForm(word, stem, { prefix })
 
     if (!nested && aff.COMPLEXPREFIXES) {
-      const newFlags = flags.replace({ prefix: concat(prefix.flags, flags.prefix) })
+      const newFlags = flags.replace({ prefix: concat<string>(prefix.flags, flags.prefix) })
       for (const form2 of deprefix(aff, stem, newFlags, true)) {
         yield form2.replace({ text: word, prefix2: prefix })
       }

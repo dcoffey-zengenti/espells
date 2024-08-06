@@ -3,11 +3,11 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { iterate } from "iterare"
-import type { Aff, Flag, Flags, FlagSet } from "../aff"
-import type { Prefix, Suffix } from "../aff/affix"
-import { RepPattern } from "../aff/rep-pattern"
-import { CapType, CONSTANTS as C } from "../constants"
-import { split } from "../util"
+import type { Aff, Flag, Flags, FlagSet } from "../aff/index.js"
+import type { Prefix, Suffix } from "../aff/affix.js"
+import { RepPattern } from "../aff/rep-pattern.js"
+import { CapType, CONSTANTS as C } from "../constants.js"
+import { split } from "../util.js"
 
 /** A word as found in a {@link Dic} instance's index. */
 export class Word {

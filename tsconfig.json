@@ -1,8 +1,9 @@
 {
   "compilerOptions": {
-    "module": "esnext",
-    "target": "esnext",
-    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "module": "NodeNext",
+    "target": "ES2020",
+    "moduleResolution": "NodeNext",
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "skipLibCheck": true,
@@ -13,7 +14,7 @@
     "experimentalDecorators": true,
     "lib": ["ESNext", "DOM", "WebWorker"],
 
-    "importsNotUsedAsValues": "error",
+    
     "isolatedModules": true,
     "strict": true,
     "forceConsistentCasingInFileNames": true,

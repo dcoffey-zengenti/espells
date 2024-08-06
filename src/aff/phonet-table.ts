@@ -2,8 +2,8 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import { CONSTANTS as C } from "../constants"
-import { re, uppercase } from "../util"
+import { CONSTANTS as C } from "../constants.js"
+import { re, uppercase } from "../util.js"
 
 // TODO: use homegrown metaphone implementation (maybe)
 

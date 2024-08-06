@@ -2,7 +2,7 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import type { SuggestionKind } from "../constants"
+import type { SuggestionKind } from "../constants.js"
 
 /** The object that the {@link Suggest} class uses internally for tracking suggestions. */
 export class Suggestion {

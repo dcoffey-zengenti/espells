@@ -3,9 +3,9 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { iterate } from "iterare"
-import { CONSTANTS as C } from "../constants"
-import { re } from "../util"
-import type { Aff, Flag, Flags } from "./index"
+import { CONSTANTS as C } from "../constants.js"
+import { re } from "../util.js"
+import type { Aff, Flag, Flags } from "./index.js"
 
 /** Base class for the {@link Prefix}/{@link Suffix} classes. Won't work by itself. */
 export abstract class Affix {

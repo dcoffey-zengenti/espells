@@ -3,7 +3,7 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { iterate } from "iterare"
-import { CONSTANTS as C } from "./constants"
+import { CONSTANTS as C } from "./constants.js"
 
 /**
  * Creates a `RegExp` using a string template. Supports flags.

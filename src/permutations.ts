@@ -2,10 +2,10 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import type { CharacterMap } from "./aff"
-import type { RepPattern } from "./aff/rep-pattern"
-import { CONSTANTS as C } from "./constants"
-import { replaceRange, uppercase } from "./util"
+import type { CharacterMap } from "./aff/index.js"
+import type { RepPattern } from "./aff/rep-pattern.js"
+import { CONSTANTS as C } from "./constants.js"
+import { replaceRange, uppercase } from "./util.js"
 
 /**
  * Uses a {@link Aff}'s {@link RepPattern} table to yield replaced

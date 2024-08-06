@@ -3,16 +3,16 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { iterate } from "iterare"
-import { Aff, OverridableAffData } from "./aff/index"
-import { decoder } from "./constants"
-import { Dic, Word } from "./dic/index"
-import { Lookup } from "./lookup"
-import { Reader } from "./reader"
-import { Suggest } from "./suggest"
-import { concat } from "./util"
+import { Aff, OverridableAffData } from "./aff/index.js"
+import { decoder } from "./constants.js"
+import { Dic, Word } from "./dic/index.js"
+import { Lookup } from "./lookup/index.js"
+import { Reader } from "./reader.js"
+import { Suggest } from "./suggest/index.js"
+import { concat } from "./util.js"
 
-export type { AffData, Flag, Flags, FlagSet, OverridableAffData } from "./aff"
-export type { LookupResult } from "./lookup"
+export type { AffData, Flag, Flags, FlagSet, OverridableAffData } from "./aff/index.js"
+export type { LookupResult } from "./lookup/index.js"
 
 export interface EspellsInitOpts {
   /** Source of a `.aff` affix file. */

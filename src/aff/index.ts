@@ -3,17 +3,17 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { iterate } from "iterare"
-import { CONSTANTS as C } from "../constants"
-import type { Reader } from "../reader"
-import { Trie } from "../trie"
-import { escapeRegExp, re, reverse, split } from "../util"
-import { Prefix, Suffix } from "./affix"
-import { Casing, GermanCasing, TurkicCasing } from "./casing"
-import { CompoundPattern } from "./compound-pattern"
-import { CompoundRule } from "./compound-rule"
-import { ConvTable } from "./conv-table"
-import { PhonetTable } from "./phonet-table"
-import { RepPattern } from "./rep-pattern"
+import { CONSTANTS as C } from "../constants.js"
+import type { Reader } from "../reader.js"
+import { Trie } from "../trie.js"
+import { escapeRegExp, re, reverse, split } from "../util.js"
+import { Prefix, Suffix } from "./affix.js"
+import { Casing, GermanCasing, TurkicCasing } from "./casing.js"
+import { CompoundPattern } from "./compound-pattern.js"
+import { CompoundRule } from "./compound-rule.js"
+import { ConvTable } from "./conv-table.js"
+import { PhonetTable } from "./phonet-table.js"
+import { RepPattern } from "./rep-pattern.js"
 import type {
   AffData,
   CharacterMap,
@@ -25,7 +25,7 @@ import type {
   PrefixMap,
   SuffixIndex,
   SuffixMap
-} from "./types"
+} from "./types.js"
 
 export type {
   Flag,
@@ -308,6 +308,7 @@ export class Aff implements AffData {
             const [, value] = split(line)
             this.AM.push(new Set<string>(value.split("")))
           })
+          break
         }
 
         case "COMPOUNDSYLLABLE": {

@@ -3,11 +3,11 @@
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
 import { iterate } from "iterare"
-import type { Aff } from "../aff"
-import { CapType, CONSTANTS as C, GOOD_EDITS, SuggestionKind } from "../constants"
-import type { Dic } from "../dic"
-import type { Word } from "../dic/word"
-import type { Lookup } from "../lookup"
+import type { Aff } from "../aff/index.js"
+import { CapType, CONSTANTS as C, GOOD_EDITS, SuggestionKind } from "../constants.js"
+import type { Dic } from "../dic/index.js"
+import type { Word } from "../dic/word.js"
+import type { Lookup } from "../lookup/index.js"
 import {
   badchar,
   badcharkey,
@@ -20,11 +20,11 @@ import {
   replchars,
   swapchar,
   twowords
-} from "../permutations"
-import { intersect, limit, lowercase, uppercase } from "../util"
-import { NgramSuggestionBuilder } from "./ngram"
-import { PhonetSuggestionBuilder } from "./phonet"
-import { MultiWordSuggestion, Suggestion } from "./suggestion"
+} from "../permutations.js"
+import { intersect, limit, lowercase, uppercase } from "../util.js"
+import { NgramSuggestionBuilder } from "./ngram.js"
+import { PhonetSuggestionBuilder } from "./phonet.js"
+import { MultiWordSuggestion, Suggestion } from "./suggestion.js"
 
 /**
  * Represents a {@link Suggest} function that "handles" potential

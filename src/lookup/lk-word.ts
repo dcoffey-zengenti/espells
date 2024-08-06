@@ -2,9 +2,9 @@
  * License, v. 2.0. If a copy of the MPL was not distributed with this
  * file, You can obtain one at https://mozilla.org/MPL/2.0/. */
 
-import type { Aff } from "../aff"
-import type { CapType, CompoundPos } from "../constants"
-import type { Dic } from "../dic"
+import type { Aff } from "../aff/index.js"
+import type { CapType, CompoundPos } from "../constants.js"
+import type { Dic } from "../dic/index.js"
 
 /**
  * A word (a string) wrapped with metadata. Can be iterated, and will
