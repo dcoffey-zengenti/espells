@@ -1,5 +1,9 @@
 # Changelog
 
+## 0.5.0
+
+- Changed the SPLIT_WORD_REGEX to fix broken spellchecks
+
 ## 0.4.1
 
 - Fix dependency issue.

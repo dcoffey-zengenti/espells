@@ -6,11 +6,13 @@
   "configurations": [
     {
       "name": "Launch Program",
+      "request": "launch",
       "program": "${workspaceFolder}/tests/tests.js",
       "runtimeArgs": ["--experimental-specifier-resolution=node"],
-      "request": "launch",
+      "console": "integratedTerminal",
+      "preLaunchTask": "npm: build",
       "skipFiles": ["<node_internals>/**"],
-      "type": "pwa-node"
+      "type": "node"
     }
   ]
 }
